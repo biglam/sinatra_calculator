@@ -1,0 +1,13 @@
+<% if @result %>
+<h1>The answer is... <%= @result %>!</h1>
+<% end %>
+
+<form method="get" action="/volume">
+  <input type="text" name="number" placeholder="0" value="<%= @number %>">
+
+  <select name="shape">
+    <option value="c">Cube (by length of sides)</option>
+    <option value="s">Sphere (by radius)</option>
+  </select>
+  <button>Show me!</button>
+</form>

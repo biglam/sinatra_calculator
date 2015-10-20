@@ -43,6 +43,15 @@ get '/converter' do
   erb :converter
 end
 
+get '/volume' do
+  if params[:number] && params[:shape]
+    @number = params[:number].to_f
+    @shape = params[:shape]
+    @result = calculate_volume(@number, @shape)
+  end
+  erb :volume
+end
+
 get '/calculate' do
   @first_number = params[:first_number].to_f
   @second_number = params[:second_number].to_f

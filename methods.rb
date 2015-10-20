@@ -81,3 +81,12 @@ def unit_converter(number, unit)
   end
   result
 end
+
+def calculate_volume(number, shape)
+  output = case shape
+  when 'c'
+    number ** 3
+  when 's'
+    (4.0 / 3.0) * Math::PI * (number ** 3)
+  end
+end
