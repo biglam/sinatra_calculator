@@ -23,15 +23,24 @@ end
 
 get '/age' do
   if params[:dob]
-  @dob = Date.parse(params[:dob])
-  @result = calculate_age(@dob)
-end
-  erb :age
+    @dob = Date.parse(params[:dob])
+    @result = calculate_age(@dob)
   end
+  erb :age
+end
 
 get '/xmas' do
   @result = calculate_xmas
   erb :xmas
+end
+
+get '/converter' do
+  if params[:number] && params[:unit]
+    @number = params[:number].to_f
+    @unit = params[:unit]
+    @result = unit_converter(@number, @unit)
+  end
+  erb :converter
 end
 
 get '/calculate' do
@@ -41,4 +50,4 @@ get '/calculate' do
 
   @result = calculate_nums(@first_number, @second_number, @operator)
   erb :result
-  end
+end

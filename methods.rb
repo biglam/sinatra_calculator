@@ -48,18 +48,36 @@ end
 
 def calculate_nums(num1, num2, operator)
   output  = case operator
-    when '+'
-      num1+ num2
-    when '-'
-      num1- num2
-    when '*'
-      num1* num2
-    when '/'
-      num1/ num2
-    when '**'
-      num1 ** num2
-    when 'sqrt'
-      Math.sqrt(num1)
-    end
-    output
+  when '+'
+    num1+ num2
+  when '-'
+    num1- num2
+  when '*'
+    num1* num2
+  when '/'
+    num1/ num2
+  when '**'
+    num1 ** num2
+  when 'sqrt'
+    Math.sqrt(num1)
+  end
+  output
+end
+
+def unit_converter(number, unit)
+  result = number * case unit
+  when 'm'
+    1.6093
+  when 'f'
+    0.3048
+  when 'i'
+    2.54
+  when 'k'
+    0.6214
+  when 'e'
+    3.2808
+  when 'c'
+    0.3937
+  end
+  result
 end

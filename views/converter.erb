@@ -1,0 +1,17 @@
+<% if @result %>
+<h1>The answer is... <%= @result %>!</h1>
+<% end %>
+
+<form method="get" action="/converter">
+  <input type="text" name="number" placeholder="0" value="<%= @number %>">
+
+  <select name="unit">
+    <option value="m">Miles to Kilometers</option>
+    <option value="f">Feet to Metres</option>
+    <option value="i">Inches to Centimeters</option>
+    <option value="k">Kilometers to Miles</option>
+    <option value="e">Meters to Feet</option>
+    <option value="c">Centimeters to Inches</option>
+  </select>
+  <button>Convert!</button>
+</form>
