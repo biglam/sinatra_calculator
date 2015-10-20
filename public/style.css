@@ -1,0 +1,19 @@
+body {
+ 
+  background-color: blue;
+  font-family: verdana, arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: darkblue;
+}
+
+a {
+  color: white;
+  background-color: rgba(255, 255,255,0.25)
+}
+
+p {
+  color: cyan;
+}

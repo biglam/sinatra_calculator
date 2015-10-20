@@ -1,0 +1,10 @@
+<% if @result %>
+<h1>The result is <%= @result %>!</h1>
+<% end %>
+
+<form method="get" action="/calculate">
+<input type="text" name="first_number" placeholder="0" value="<%= @first_number %>">
+<input type="text" name="operator" placeholder="+" value="<%= @operator %>">
+<input type="text" name="second_number" placeholder="0" value="<%= @second_number %>">
+<button>CALCULATE!</button>
+</form>

@@ -1,0 +1,12 @@
+<h1>Age calculator! YYYYYAAAAAAYYYYYY!!!!!!</h1>
+
+<form method="get" action="/age">
+<input type="date" name="dob">
+<button>You're old</button>
+
+
+</form>
+
+<p><%= if @dob
+ "#{@result}"
+end %></p>
