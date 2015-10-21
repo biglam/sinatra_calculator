@@ -60,3 +60,11 @@ get '/calculate' do
   @result = calculate_nums(@first_number, @second_number, @operator)
   erb :result
 end
+
+get '/penis' do
+  if params[:car]
+    @car = params[:car]
+    @result = calculate_penis(@car)
+  end
+  erb :penis
+end

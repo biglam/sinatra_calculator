@@ -90,3 +90,18 @@ def calculate_volume(number, shape)
     (4.0 / 3.0) * Math::PI * (number ** 3)
   end
 end
+
+def calculate_penis(car)
+output = case car
+  when "fiat"
+    "average"
+  when "ford"
+    "ok"
+  when "bmw"
+    "minscule"
+  when "mercedes"
+    "small"
+  when "lamborghini"
+    "non-existant"
+  end
+end
