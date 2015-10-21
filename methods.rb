@@ -91,7 +91,7 @@ def calculate_volume(number, shape)
   end
 end
 
-def calculate_penis(car)
+def calculate_manliness(car)
 output = case car
   when "fiat"
     "average"

@@ -61,10 +61,10 @@ get '/calculate' do
   erb :result
 end
 
-get '/penis' do
+get '/manliness' do
   if params[:car]
     @car = params[:car]
-    @result = calculate_penis(@car)
+    @result = calculate_manliness(@car)
   end
-  erb :penis
+  erb :manliness
 end
